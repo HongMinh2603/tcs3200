@@ -1,0 +1,70 @@
+etsion: v3.1[0m
+[0;3�[0;32mI (13) boot: ESP-IDF v5.1.4-dirty 2nd stage bootloader[0m
+[0;32mI (13) boot: compile time Dec 23 2024 10:55:16[0m
+[0;32mI (13) boot: Multicore bootloader[0m
+[0;32mI (17) boot: chip revision: v3.1[0m
+[0;32mI (21) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (26) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (30) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (35) boot: Enabling RNG early entropy source...[0m
+[0;32mI (40) boot: Partition Table:[0m
+[0;32mI (44) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (51) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (73) boot: End of partition table[0m
+[0;32mI (78) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aedch ( 44764) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=0001af04 vaddr=3ffb0000 size=021a0h (  8608) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001d0ac vaddr=40080000 size=02f6ch ( 12140) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1aa80h (109184) map[0m
+[0;32mI (156) esp_image: segment 4: paddr=0003aaa8 vaddr=40082f6c size=0a72ch ( 42796) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (192) cpu_start: Multicore app[0m
+[0;32mI (193) cpu_start: Pro cpu up.[0m
+[0;32mI (193) cpu_start: Starting app cpu, entry point is 0x40081218[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (211) cpu_start: Pro cpu start user code[0m
+[0;32mI (211) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (211) cpu_start: Application information:[0m
+[0;32mI (215) cpu_start: Project name:     tcs3200[0m
+[0;32mI (220) cpu_start: App version:      1[0m
+[0;32mI (225) cpu_start: Compile time:     Dec 23 2024 10:53:36[0m
+[0;32mI (231) cpu_start: ELF file SHA256:  0c1dfe123a865364...[0m
+[0;32mI (237) cpu_start: ESP-IDF:          v5.1.4-dirty[0m
+[0;32mI (242) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (247) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (252) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (257) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (264) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (270) heap_init: At 3FFB2A30 len 0002D5D0 (181 KiB): DRAM[0m
+[0;32mI (276) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (282) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (289) heap_init: At 4008D698 len 00012968 (74 KiB): IRAM[0m
+[0;32mI (296) spi_flash: detected chip: generic[0m
+[0;32mI (300) spi_flash: flash io: dio[0m
+[0;33mW (303) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (317) pcnt(legacy): legacy driver is deprecated, please migrate to `driver/pulse_cnt.h`[0m
+[0;32mI (326) app_start: Starting scheduler on CPU0[0m
+[0;32mI (331) app_start: Starting scheduler on CPU1[0m
+[0;32mI (331) main_task: Started on CPU0[0m
+[0;32mI (341) main_task: Calling app_main()[0m
+[0;32mI (341) lcd: I2C initialized successfully[0m
+0 0 0R = 503 Hz, G = 474 Hz, B = 547 Hz
+0 0 0R = 519 Hz, G = 454 Hz, B = 886 Hz
+137 213 132R = 1774 Hz, G = 2115 Hz, B = 1819 Hz
+167 30 0R = 1953 Hz, G = 1132 Hz, B = 506 Hz
+0 0 0R = 505 Hz, G = 444 Hz, B = 504 Hz
+0 0 0R = 504 Hz, G = 442 Hz, B = 504 Hz
+0 0 0R = 504 Hz, G = 442 Hz, B = 505 Hz
+0 0 0R = 505 Hz, G = 442 Hz, B = 504 Hz
+0 0 0R = 506 Hz, G = 442 Hz, B = 503 Hz
+0 0 0R = 504 Hz, G = 442 Hz, B = 507 Hz
+0 0 6R = 523 Hz, G = 943 Hz, B = 1181 Hz
+219 0 0R = 2268 Hz, G = 943 Hz, B = 1153 Hz
+220 0 0R = 2271 Hz, G = 927 Hz, B = 1095 Hz
+196 0 0R = 2130 Hz, G = 901 Hz, B = 1096 Hz
+198 0 0R = 2138 Hz, G = 902 Hz, B = 1098 Hz
+198 0 0R = 2143 Hz, G = 904 Hz, B = 1100 Hz
+199 0 0R = 2146 Hz, G = 905 Hz, B = 1101 Hz
+199 0 0R = 2149 Hz, G = 906 Hz, B = 1102 Hz

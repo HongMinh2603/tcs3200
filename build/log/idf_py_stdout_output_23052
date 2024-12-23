@@ -1,0 +1,201 @@
+et���K��.1[0m
+[0;3�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x33 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.4-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Dec 23 2024 10:55:16[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aedch ( 44764) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001af04 vaddr=3ffb0000 size=021a0h (  8608) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=0001d0ac vaddr=40080000 size=02f6ch ( 12140) load[0m
+[0;32mI (134) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1aa80h (109184) map[0m
+[0;32mI (177) esp_image: segment 4: paddr=0003aaa8 vaddr=40082f6c size=0a72ch ( 42796) load[0m
+[0;32mI (201) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (201) boot: Disabling RNG early entropy source...[0m
+[0;32mI (213) cpu_start: Multicore app[0m
+[0;32mI (213) cpu_start: Pro cpu up.[0m
+[0;32mI (213) cpu_start: Starting app cpu, entry point is 0x40081218[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (231) cpu_start: Pro cpu start user code[0m
+[0;32mI (231) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (231) cpu_start: Application information:[0m
+[0;32mI (236) cpu_start: Project name:     tcs3200[0m
+[0;32mI (241) cpu_start: App version:      1[0m
+[0;32mI (245) cpu_start: Compile time:     Dec 23 2024 10:53:36[0m
+[0;32mI (251) cpu_start: ELF file SHA256:  bed6c8af5279f8ef...[0m
+[0;32mI (257) cpu_start: ESP-IDF:          v5.1.4-dirty[0m
+[0;32mI (263) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (267) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (272) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (277) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (284) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (290) heap_init: At 3FFB2A30 len 0002D5D0 (181 KiB): DRAM[0m
+[0;32mI (297) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (303) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (309) heap_init: At 4008D698 len 00012968 (74 KiB): IRAM[0m
+[0;32mI (317) spi_flash: detected chip: generic[0m
+[0;32mI (320) spi_flash: flash io: dio[0m
+[0;33mW (324) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (337) pcnt(legacy): legacy driver is deprecated, please migrate to `driver/pulse_cnt.h`[0m
+[0;32mI (347) app_start: Starting scheduler on CPU0[0m
+[0;32mI (351) app_start: Starting scheduler on CPU1[0m
+[0;32mI (351) main_task: Started on CPU0[0m
+[0;32mI (361) main_task: Calling app_main()[0m
+[0;32mI (361) lcd: I2C initialized successfully[0m
+24 0 0R = 1095 Hz, G = 573 Hz, B = 687 Hz
+24 0 0R = 1099 Hz, G = 574 Hz, B = 688 Hz
+25 0 0R = 1103 Hz, G = 575 Hz, B = 690 Hz
+25 0 0R = 1104 Hz, G = 576 Hz, B = 691 Hz
+26 0 0R = 1106 Hz, G = 577 Hz, B = 691 Hz
+26 0 0R = 1107 Hz, G = 577 Hz, B = 691 Hz
+26 0 0R = 1108 Hz, G = 577 Hz, B = 692 Hz
+26 0 0R = 1109 Hz, G = 578 Hz, B = 692 Hz
+26 0 0R = 1109 Hz, G = 577 Hz, B = 694 Hz
+26 0 0R = 1111 Hz, G = 578 Hz, B = 693 Hz
+26 0 0R = 1110 Hz, G = 578 Hz, B = 693 Hz
+26 0 0R = 1110 Hz, G = 578 Hz, B = 694 Hz
+26 0 0R = 1110 Hz, G = 578 Hz, B = 693 Hz
+26 0 0R = 1111 Hz, G = 581 Hz, B = 722 Hz
+0 0 0R = 629 Hz, G = 443 Hz, B = 528 Hz
+0 0 0R = 506 Hz, G = 444 Hz, B = 503 Hz
+0 0 0R = 497 Hz, G = 465 Hz, B = 710 Hz
+0 0 0R = 606 Hz, G = 484 Hz, B = 503 Hz
+0 0 0R = 571 Hz, G = 538 Hz, B = 1124 Hz
+207 0 0R = 2197 Hz, G = 929 Hz, B = 1105 Hz
+0 0 0R = 629 Hz, G = 492 Hz, B = 707 Hz
+0 0 0R = 701 Hz, G = 492 Hz, B = 515 Hz
+0 0 0R = 507 Hz, G = 460 Hz, B = 520 Hz
+0 0 0R = 520 Hz, G = 453 Hz, B = 514 Hz
+0 0 0R = 521 Hz, G = 457 Hz, B = 517 Hz
+ts J�K��.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aedch ( 44764) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001af04 vaddr=3ffb0000 size=021a0h (  8608) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=0001d0ac vaddr=40080000 size=02f6ch ( 12140) load[0m
+[0;32mI (134) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1aa80h (109184) map[0m
+[0;32mI (177) esp_image: segment 4: paddr=0003aaa8 vaddr=40082f6c size=0a72ch ( 42796) load[0m
+[0;32mI (201) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (201) boot: Disabling RNG early entropy source...[0m
+[0;32mI (213) cpu_start: Multicore app[0m
+[0;32mI (213) cpu_start: Pro cpu up.[0m
+[0;32mI (213) cpu_start: Starting app cpu, entry point is 0x40081218[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (231) cpu_start: Pro cpu start user code[0m
+[0;32mI (231) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (231) cpu_start: Application information:[0m
+[0;32mI (236) cpu_start: Project name:     tcs3200[0m
+[0;32mI (241) cpu_start: App version:      1[0m
+[0;32mI (245) cpu_start: Compile time:     Dec 23 2024 10:53:36[0m
+[0;32mI (251) cpu_start: ELF file SHA256:  bed6c8af5279f8ef...[0m
+[0;32mI (257) cpu_start: ESP-IDF:          v5.1.4-dirty[0m
+[0;32mI (263) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (267) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (272) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (277) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (284) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (290) heap_init: At 3FFB2A30 len 0002D5D0 (181 KiB): DRAM[0m
+[0;32mI (297) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (303) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (309) heap_init: At 4008D698 len 00012968 (74 KiB): IRAM[0m
+[0;32mI (317) spi_flash: detected chip: generic[0m
+[0;32mI (320) spi_flash: flash io: dio[0m
+[0;33mW (324) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (337) pcnt(legacy): legacy driver is deprecated, please migrate to `driver/pulse_cnt.h`[0m
+[0;32mI (347) app_start: Starting scheduler on CPU0[0m
+[0;32mI (351) app_start: Starting scheduler on CPU1[0m
+[0;32mI (351) main_task: Started on CPU0[0m
+[0;32mI (361) main_task: Calling app_main()[0m
+[0;32mI (361) lcd: I2C initialized successfully[0m
+0 0 0R = 514 Hz, G = 445 Hz, B = 505 Hz
+0 0 0R = 507 Hz, G = 444 Hz, B = 515 Hz
+0 0 0R = 517 Hz, G = 475 Hz, B = 519 Hz
+0 0 0R = 532 Hz, G = 458 Hz, B = 526 Hz
+�K��.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aedch ( 44764) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001af04 vaddr=3ffb0000 size=021a0h (  8608) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=0001d0ac vaddr=40080000 size=02f6ch ( 12140) load[0m
+[0;32mI (134) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1aa80h (109184) map[0m
+[0;32mI (177) esp_image: segment 4: paddr=0003aaa8 vaddr=40082f6c size=0a72ch ( 42796) load[0m
+[0;32mI (201) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (201) boot: Disabling RNG early entropy source...[0m
+[0;32mI (213) cpu_start: Multicore app[0m
+[0;32mI (213) cpu_start: Pro cpu up.[0m
+[0;32mI (213) cpu_start: Starting app cpu, entry point is 0x40081218[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (231) cpu_start: Pro cpu start user code[0m
+[0;32mI (231) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (231) cpu_start: Application information:[0m
+[0;32mI (236) cpu_start: Project name:     tcs3200[0m
+[0;32mI (241) cpu_start: App version:      1[0m
+[0;32mI (245) cpu_start: Compile time:     Dec 23 2024 10:53:36[0m
+[0;32mI (251) cpu_start: ELF file SHA256:  bed6c8af5279f8ef...[0m
+[0;32mI (257) cpu_start: ESP-IDF:          v5.1.4-dirty[0m
+[0;32mI (263) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (267) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (272) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (277) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (284) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (290) heap_init: At 3FFB2A30 len 0002D5D0 (181 KiB): DRAM[0m
+[0;32mI (297) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (303) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (309) heap_init: At 4008D698 len 00012968 (74 KiB): IRAM[0m
+[0;32mI (317) spi_flash: detected chip: generic[0m
+[0;32mI (320) spi_flash: flash io: dio[0m
+[0;33mW (324) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (337) pcnt(legacy): legacy driver is deprecated, please migrate to `driver/pulse_cnt.h`[0m
+[0;32mI (347) app_start: Starting scheduler on CPU0[0m
+[0;32mI (351) app_start: Starting scheduler on CPU1[0m
+[0;32mI (351) main_task: Started on CPU0[0m
+[0;32mI (361) main_task: Calling app_main()[0m
+[0;32mI (361) lcd: I2C initialized successfully[0m
+21 0 0R = 1078 Hz, G = 731 Hz, B = 514 Hz
+18 0 0R = 1062 Hz, G = 683 Hz, B = 623 Hz
+0 0 0R = 503 Hz, G = 448 Hz, B = 509 Hz
+0 0 0R = 508 Hz, G = 438 Hz, B = 499 Hz
+0 0 0R = 500 Hz, G = 439 Hz, B = 502 Hz
+0 0 0R = 508 Hz, G = 443 Hz, B = 504 Hz
+0 0 0R = 508 Hz, G = 443 Hz, B = 504 Hz
+0 0 0R = 509 Hz, G = 443 Hz, B = 504 Hz
+0 0 0R = 509 Hz, G = 444 Hz, B = 504 Hz
+0 0 0R = 501 Hz, G = 439 Hz, B = 499 Hz
+0 0 0R = 502 Hz, G = 439 Hz, B = 499 Hz

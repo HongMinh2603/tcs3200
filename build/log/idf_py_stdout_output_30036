@@ -1,0 +1,209 @@
+ets���� v3.1[0m
+[0;32m�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x33 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.4-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Dec 23 2024 10:55:16[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b4ech ( 46316) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001b514 vaddr=3ffb0000 size=021a0h (  8608) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001d6bc vaddr=40080000 size=0295ch ( 10588) load[0m
+[0;32mI (134) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1c2d0h (115408) map[0m
+[0;32mI (179) esp_image: segment 4: paddr=0003c2f8 vaddr=4008295c size=0ad3ch ( 44348) load[0m
+[0;32mI (205) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) cpu_start: Pro cpu up.[0m
+[0;32mI (217) cpu_start: Starting app cpu, entry point is 0x40081218[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (235) cpu_start: Pro cpu start user code[0m
+[0;32mI (235) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (235) cpu_start: Application information:[0m
+[0;32mI (239) cpu_start: Project name:     tcs3200[0m
+[0;32mI (244) cpu_start: App version:      1[0m
+[0;32mI (249) cpu_start: Compile time:     Dec 23 2024 10:53:36[0m
+[0;32mI (255) cpu_start: ELF file SHA256:  e384ab003a1837b3...[0m
+[0;32mI (261) cpu_start: ESP-IDF:          v5.1.4-dirty[0m
+[0;32mI (266) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (271) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (276) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (281) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (288) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (294) heap_init: At 3FFB2A30 len 0002D5D0 (181 KiB): DRAM[0m
+[0;32mI (300) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (306) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (313) heap_init: At 4008D698 len 00012968 (74 KiB): IRAM[0m
+[0;32mI (320) spi_flash: detected chip: generic[0m
+[0;32mI (324) spi_flash: flash io: dio[0m
+[0;33mW (328) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (341) pcnt(legacy): legacy driver is deprecated, please migrate to `driver/pulse_cnt.h`[0m
+[0;32mI (350) app_start: Starting scheduler on CPU0[0m
+[0;32mI (355) app_start: Starting scheduler on CPU1[0m
+[0;32mI (355) main_task: Started on CPU0[0m
+[0;32mI (365) main_task: Calling app_main()[0m
+[0;32mI (365) lcd: I2C initialized successfully[0m
+0 0 0R = 508 Hz, G = 441 Hz, B = 503 Hz
+0 29 136R = 496 Hz, G = 1126 Hz, B = 1841 Hz
+149 226 129R = 1846 Hz, G = 2189 Hz, B = 1807 Hz
+145 224 128R = 1824 Hz, G = 2176 Hz, B = 1801 Hz
+144 222 74R = 1818 Hz, G = 2168 Hz, B = 1526 Hz
+0 0 0R = 501 Hz, G = 441 Hz, B = 504 Hz
+0 0 0R = 500 Hz, G = 438 Hz, B = 500 Hz
+0 0 0R = 499 Hz, G = 439 Hz, B = 499 Hz
+0 0 0R = 499 Hz, G = 437 Hz, B = 498 Hz
+0 0 0R = 498 Hz, G = 437 Hz, B = 498 Hz
+0 0 0R = 498 Hz, G = 437 Hz, B = 498 Hz
+0 0 0R = 497 Hz, G = 437 Hz, B = 499 Hz
+0 0 0R = 499 Hz, G = 437 Hz, B = 498 Hz
+0 0 0R = 498 Hz, G = 437 Hz, B = 498 Hz
+0 0 0R = 499 Hz, G = 439 Hz, B = 501 Hz
+0 0 0R = 501 Hz, G = 439 Hz, B = 501 Hz
+0 0 0R = 499 Hz, G = 438 Hz, B = 499 Hz
+0 0 0R = 500 Hz, G = 438 Hz, B = 500 Hz
+0 0 0R = 496 Hz, G = 438 Hz, B = 499 Hz
+0 0 0R = 499 Hz, G = 439 Hz, B = 499 Hz
+0 0 0R = 499 Hz, G = 437 Hz, B = 500 Hz
+0 0 0R = 501 Hz, G = 441 Hz, B = 503 Hz
+0 0 0R = 503 Hz, G = 442 Hz, B = 500 Hz
+0 0 0R = 501 Hz, G = 440 Hz, B = 502 Hz
+0 0 0R = 500 Hz, G = 442 Hz, B = 503 Hz
+0 0 0R = 503 Hz, G = 441 Hz, B = 502 Hz
+0 0 0R = 502 Hz, G = 440 Hz, B = 501 Hz
+0 0 0R = 501 Hz, G = 440 Hz, B = 501 Hz
+0 0 0R = 500 Hz, G = 440 Hz, B = 501 Hz
+0 0 0R = 501 Hz, G = 440 Hz, B = 500 Hz
+0 0 0R = 499 Hz, G = 440 Hz, B = 500 Hz
+0 0 0R = 497 Hz, G = 434 Hz, B = 501 Hz
+0 0 0R = 497 Hz, G = 438 Hz, B = 500 Hz
+0 0 0R = 499 Hz, G = 439 Hz, B = 500 Hz
+0 0 0R = 499 Hz, G = 440 Hz, B = 499 Hz
+0 0 0R = 500 Hz, G = 439 Hz, B = 500 Hz
+0 0 0R = 500 Hz, G = 440 Hz, B = 500 Hz
+0 0 0R = 501 Hz, G = 440 Hz, B = 501 Hz
+0 0 0R = 500 Hz, G = 439 Hz, B = 501 Hz
+0 0 0R = 500 Hz, G = 440 Hz, B = 502 Hz
+0 0 0R = 501 Hz, G = 440 Hz, B = 502 Hz
+0 0 0R = 499 Hz, G = 440 Hz, B = 497 Hz
+0 0 0R = 496 Hz, G = 436 Hz, B = 502 Hz
+0 0 0R = 506 Hz, G = 439 Hz, B = 503 Hz
+0 0 0R = 497 Hz, G = 436 Hz, B = 497 Hz
+0 0 0R = 496 Hz, G = 437 Hz, B = 498 Hz
+0 0 0R = 497 Hz, G = 437 Hz, B = 497 Hz
+0 0 0R = 489 Hz, G = 432 Hz, B = 494 Hz
+0 0 0R = 496 Hz, G = 436 Hz, B = 497 Hz
+0 0 0R = 496 Hz, G = 437 Hz, B = 497 Hz
+0 0 0R = 497 Hz, G = 435 Hz, B = 498 Hz
+0 0 0R = 489 Hz, G = 440 Hz, B = 495 Hz
+0 0 0R = 500 Hz, G = 439 Hz, B = 502 Hz
+0 0 0R = 494 Hz, G = 435 Hz, B = 496 Hz
+0 0 0R = 492 Hz, G = 435 Hz, B = 495 Hz
+0 0 0R = 491 Hz, G = 433 Hz, B = 492 Hz
+0 0 0R = 494 Hz, G = 440 Hz, B = 502 Hz
+0 0 0R = 502 Hz, G = 441 Hz, B = 503 Hz
+0 0 0R = 500 Hz, G = 441 Hz, B = 503 Hz
+0 0 0R = 496 Hz, G = 435 Hz, B = 496 Hz
+0 0 0R = 495 Hz, G = 437 Hz, B = 497 Hz
+0 0 0R = 492 Hz, G = 435 Hz, B = 497 Hz
+0 0 0R = 493 Hz, G = 435 Hz, B = 495 Hz
+0 0 0R = 496 Hz, G = 436 Hz, B = 496 Hz
+0 0 0R = 502 Hz, G = 442 Hz, B = 504 Hz
+0 0 0R = 499 Hz, G = 445 Hz, B = 503 Hz
+0 0 0R = 502 Hz, G = 439 Hz, B = 501 Hz
+0 0 0R = 499 Hz, G = 439 Hz, B = 501 Hz
+0 0 0R = 501 Hz, G = 440 Hz, B = 499 Hz
+0 0 0R = 502 Hz, G = 437 Hz, B = 495 Hz
+0 0 0R = 492 Hz, G = 434 Hz, B = 494 Hz
+0 0 0R = 491 Hz, G = 434 Hz, B = 494 Hz
+0 0 0R = 491 Hz, G = 435 Hz, B = 496 Hz
+0 0 0R = 492 Hz, G = 434 Hz, B = 495 Hz
+0 0 0R = 491 Hz, G = 435 Hz, B = 495 Hz
+0 0 0R = 488 Hz, G = 430 Hz, B = 494 Hz
+0 0 0R = 478 Hz, G = 428 Hz, B = 494 Hz
+0 0 0R = 486 Hz, G = 430 Hz, B = 492 Hz
+0 0 0R = 485 Hz, G = 429 Hz, B = 489 Hz
+0 0 0R = 486 Hz, G = 434 Hz, B = 499 Hz
+0 0 0R = 498 Hz, G = 438 Hz, B = 498 Hz
+0 0 0R = 495 Hz, G = 436 Hz, B = 495 Hz
+0 0 0R = 489 Hz, G = 431 Hz, B = 493 Hz
+0 0 0R = 489 Hz, G = 432 Hz, B = 495 Hz
+0 0 0R = 483 Hz, G = 436 Hz, B = 492 Hz
+0 0 0R = 485 Hz, G = 428 Hz, B = 491 Hz
+0 0 0R = 481 Hz, G = 430 Hz, B = 492 Hz
+0 0 0R = 483 Hz, G = 432 Hz, B = 490 Hz
+0 0 0R = 487 Hz, G = 430 Hz, B = 492 Hz
+0 0 0R = 487 Hz, G = 442 Hz, B = 499 Hz
+0 0 0R = 489 Hz, G = 434 Hz, B = 494 Hz
+0 0 0R = 483 Hz, G = 431 Hz, B = 493 Hz
+0 0 0R = 499 Hz, G = 439 Hz, B = 501 Hz
+0 0 0R = 498 Hz, G = 438 Hz, B = 499 Hz
+0 0 0R = 497 Hz, G = 437 Hz, B = 500 Hz
+0 0 0R = 494 Hz, G = 433 Hz, B = 494 Hz
+0 0 0R = 501 Hz, G = 440 Hz, B = 502 Hz
+0 0 0R = 501 Hz, G = 440 Hz, B = 499 Hz
+0 0 0R = 498 Hz, G = 437 Hz, B = 499 Hz
+0 0 0R = 502 Hz, G = 437 Hz, B = 499 Hz
+0 0 0R = 496 Hz, G = 434 Hz, B = 495 Hz
+0 0 0R = 496 Hz, G = 439 Hz, B = 492 Hz
+0 0 0R = 483 Hz, G = 432 Hz, B = 497 Hz
+0 0 0R = 489 Hz, G = 434 Hz, B = 495 Hz
+0 0 0R = 492 Hz, G = 437 Hz, B = 499 Hz
+0 0 0R = 498 Hz, G = 438 Hz, B = 499 Hz
+0 0 0R = 494 Hz, G = 430 Hz, B = 493 Hz
+0 0 0R = 479 Hz, G = 432 Hz, B = 494 Hz
+0 0 0R = 484 Hz, G = 434 Hz, B = 490 Hz
+0 0 0R = 483 Hz, G = 434 Hz, B = 493 Hz
+0 0 0R = 493 Hz, G = 433 Hz, B = 496 Hz
+0 0 0R = 489 Hz, G = 433 Hz, B = 494 Hz
+0 0 0R = 508 Hz, G = 444 Hz, B = 506 Hz
+0 0 0R = 507 Hz, G = 445 Hz, B = 508 Hz
+0 0 0R = 511 Hz, G = 446 Hz, B = 508 Hz
+0 0 0R = 510 Hz, G = 446 Hz, B = 507 Hz
+0 0 0R = 507 Hz, G = 439 Hz, B = 496 Hz
+0 0 0R = 497 Hz, G = 430 Hz, B = 492 Hz
+0 0 0R = 496 Hz, G = 437 Hz, B = 496 Hz
+0 0 0R = 495 Hz, G = 436 Hz, B = 500 Hz
+0 0 0R = 493 Hz, G = 440 Hz, B = 501 Hz
+0 0 0R = 494 Hz, G = 438 Hz, B = 500 Hz
+0 0 0R = 495 Hz, G = 437 Hz, B = 495 Hz
+0 0 0R = 494 Hz, G = 435 Hz, B = 500 Hz
+0 0 0R = 499 Hz, G = 437 Hz, B = 496 Hz
+0 0 0R = 485 Hz, G = 432 Hz, B = 501 Hz
+0 0 0R = 495 Hz, G = 438 Hz, B = 498 Hz
+0 0 0R = 496 Hz, G = 435 Hz, B = 495 Hz
+0 0 0R = 499 Hz, G = 438 Hz, B = 501 Hz
+0 0 0R = 498 Hz, G = 437 Hz, B = 498 Hz
+0 0 0R = 487 Hz, G = 439 Hz, B = 501 Hz
+0 0 0R = 503 Hz, G = 441 Hz, B = 503 Hz
+0 0 0R = 502 Hz, G = 442 Hz, B = 503 Hz
+0 0 0R = 502 Hz, G = 442 Hz, B = 496 Hz
+0 0 0R = 495 Hz, G = 439 Hz, B = 502 Hz
+0 0 0R = 503 Hz, G = 438 Hz, B = 501 Hz
+0 0 0R = 492 Hz, G = 439 Hz, B = 500 Hz
+0 0 0R = 496 Hz, G = 439 Hz, B = 502 Hz
+0 0 0R = 499 Hz, G = 442 Hz, B = 504 Hz
+0 0 0R = 501 Hz, G = 441 Hz, B = 502 Hz
+0 0 0R = 502 Hz, G = 441 Hz, B = 503 Hz
+0 0 0R = 502 Hz, G = 442 Hz, B = 503 Hz
+0 0 0R = 503 Hz, G = 442 Hz, B = 494 Hz
+0 0 0R = 487 Hz, G = 433 Hz, B = 500 Hz
